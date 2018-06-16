@@ -19,8 +19,23 @@ class JavaFizzyBuzzy {
 	//main driver
 	public static void main(String[] args) {
 		//local Declarations
+		List<Integer> tgtList = initialList();
+
 		System.out.println("HelloWorld");
 	}
 
 	//function definitions below	
+	public static ArrayList<Integer> initialList() {
+		List<Integer> tgtList = new ArrayList<Integer>();
+		Random rand = new Random();
+		int i = 0, max = 10;
+
+		while(i<max) {
+			tgtList.add(rand.nextInt(max));
+			i++;
+		}
+
+		return tgtList;
+	}
+
 }
