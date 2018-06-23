@@ -20,17 +20,18 @@ class JavaFizzyBuzzy {
 	public static void main(String[] args) {
 		//local Declarations
 		List<Integer> tgtList = initialList();
-
-		System.out.println("HelloWorld");
 	}
 
-	//function definitions below	
+	//function definitions below
+	//initialList function will initialize a list full of integers 	
 	public static ArrayList<Integer> initialList() {
+		//local declarations
 		List<Integer> tgtList = new ArrayList<Integer>();
 		Random rand = new Random();
 		int i = 0, max = 10;
 
-		while(i<max) {
+		//loop through and insert random integers up to 10
+		while(i < max) {
 			tgtList.add(rand.nextInt(max));
 			i++;
 		}
