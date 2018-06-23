@@ -45,5 +45,13 @@ class JavaFizzyBuzzy {
 	//doFizzBuzz will take a list and print values up to that tgtValue while printing Fizz, Buzz, or FizzBuzz respectively
 	public static void doFizzBuzz(ArrayList<Integer> tgtList) {
 		//local declarations
+		int i = 0;
+
+		//go through each item in tgtList
+		while(i < tgtList.size()) {
+			//call printVals function
+			printVals(tgtList.get(i));
+			i++;
+		}
 	}
 }
