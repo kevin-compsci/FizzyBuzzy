@@ -19,7 +19,10 @@ class JavaFizzyBuzzy {
 	//main driver
 	public static void main(String[] args) {
 		//local Declarations
-		List<Integer> tgtList = initialList();
+		List<Integer> tgtList = initialList(); //get initial list
+
+		//call function to do fizz buzz
+		doFizzBuzz(tgtList); 
 	}
 
 	//function definitions below
@@ -39,4 +42,8 @@ class JavaFizzyBuzzy {
 		return tgtList;
 	}
 
+	//doFizzBuzz will take a list and print values up to that tgtValue while printing Fizz, Buzz, or FizzBuzz respectively
+	public static void doFizzBuzz(ArrayList<Integer> tgtList) {
+		//local declarations
+	}
 }
