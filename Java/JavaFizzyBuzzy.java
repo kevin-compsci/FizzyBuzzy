@@ -94,5 +94,7 @@ class JavaFizzyBuzzy {
 			System.out.println(myList.get(i));
 			i++;
 		}
+
+		System.out.println(""); //newline
 	}
 }
