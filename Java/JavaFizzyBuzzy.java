@@ -84,6 +84,15 @@ class JavaFizzyBuzzy {
 
 	//printList will print out the items inside the given list
 	public static void printList(List<Integer> myList) {
-		
+		//local declarations
+		int i = 0;
+
+		System.out.println("::Intial Values::"); //log purposes
+
+		//loop through all elements and print out items
+		while(i < myList.size()) {
+			System.out.println(myList.get(i));
+			i++;
+		}
 	}
 }
