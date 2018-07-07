@@ -22,7 +22,7 @@ class JavaFizzyBuzzy {
 		List<Integer> tgtList = initialList(); //get initial list
 
 		//print initial values
-		printValues(tgtList);
+		printList(tgtList);
 
 		//call function to do fizz buzz
 		doFizzBuzz(tgtList); 
@@ -80,5 +80,10 @@ class JavaFizzyBuzzy {
 			}
 			i++;
 		}
+	}
+
+	//printList will print out the items inside the given list
+	public static void printList(List<Integer> myList) {
+		
 	}
 }
