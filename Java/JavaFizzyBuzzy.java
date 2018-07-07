@@ -21,13 +21,16 @@ class JavaFizzyBuzzy {
 		//local Declarations
 		List<Integer> tgtList = initialList(); //get initial list
 
+		//print initial values
+		
+
 		//call function to do fizz buzz
 		doFizzBuzz(tgtList); 
 	}
 
 	//function definitions below
 	//initialList function will initialize a list full of integers 	
-	public static ArrayList<Integer> initialList() {
+	public static List<Integer> initialList() {
 		//local declarations
 		List<Integer> tgtList = new ArrayList<Integer>();
 		Random rand = new Random();
@@ -43,7 +46,7 @@ class JavaFizzyBuzzy {
 	}
 
 	//doFizzBuzz will take a list and call functions to print appropriate values
-	public static void doFizzBuzz(ArrayList<Integer> tgtList) {
+	public static void doFizzBuzz(List<Integer> tgtList) {
 		//local declarations
 		int i = 0;
 
@@ -62,7 +65,7 @@ class JavaFizzyBuzzy {
 
 		//print values up to tgtVal
 		while(i < tgtVal) {
-			//condition to check for fizz, buzz, fizzbuzz respectively
+			//condition to check for fizz, buzz, and fizzbuzz respectively
 			if((i % 3 == 0) && (i % 5 == 0)) {
 				System.out.println("FizzBuzz");
 			}
