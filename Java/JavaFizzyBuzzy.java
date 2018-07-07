@@ -34,7 +34,9 @@ class JavaFizzyBuzzy {
 		//local declarations
 		List<Integer> tgtList = new ArrayList<Integer>();
 		Random rand = new Random();
-		int i = 0, max = 10;
+		int i = 0, max = 15;
+
+		//TODO: exclude 0 in list
 
 		//loop through and insert random integers up to 10
 		while(i < max) {
@@ -61,10 +63,10 @@ class JavaFizzyBuzzy {
 	//printVals will print values up to the tgt value
 	public static void printVals(int tgtVal) {
 		//local declarations
-		int i = 0;
+		int i = 1;
 
 		//print values up to tgtVal
-		while(i < tgtVal) {
+		while(i <= tgtVal) {
 			//condition to check for fizz, buzz, and fizzbuzz respectively
 			if((i % 3 == 0) && (i % 5 == 0)) {
 				System.out.println("FizzBuzz");
